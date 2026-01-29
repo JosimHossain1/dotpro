@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
 const page = () => {
@@ -10,12 +11,12 @@ const page = () => {
         <div className="flow-line h-full"></div>
       </div>
 
-      <Navbar/>
+      <Navbar />
       <main id="main-content" className="relative z-10">
-   
-      
-        
-  
+      <Hero />
+
+
+
         <div className="relative">
           <div className="absolute left-1/2 -top-20 -translate-x-1/2 flex flex-col items-center">
             <div className="h-40 w-px bg-gradient-to-b from-transparent to-[#00CC76]"></div>
@@ -26,7 +27,7 @@ const page = () => {
 
         {/* The Flow Journey Phase 02: Intervention */}
         <div className="relative mt-40">
-           <div className="absolute left-1/2 -top-20 -translate-x-1/2 flex flex-col items-center">
+          <div className="absolute left-1/2 -top-20 -translate-x-1/2 flex flex-col items-center">
             <div className="h-40 w-px bg-gradient-to-b from-[#00CC76] via-[#00CC76] to-transparent"></div>
             <span className="mt-4 text-[9px] font-black text-[#00CC76] uppercase tracking-[0.6em]">Phase 02_Architecture</span>
           </div>
