@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -13,7 +14,7 @@ const page = () => {
 
       <Navbar />
       <main id="main-content" className="relative z-10">
-      <Hero />
+        <Hero />
 
 
 
@@ -43,7 +44,7 @@ const page = () => {
 
       </main>
 
-
+      <Footer />
       {/* Persistent Flow Labels */}
       <div className="hidden xl:flex fixed right-10 top-1/2 -translate-y-1/2 phase-label items-center space-y-10 py-10 z-50">
         <span className="text-[8px] font-black text-white/10 uppercase tracking-[1em]">Diagnose</span>
