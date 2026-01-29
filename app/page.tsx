@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 
 const page = () => {
   return (
@@ -41,7 +42,7 @@ const page = () => {
         </div>
 
         {/* The Final Destination: Deployment */}
-
+        <Pricing />
       </main>
 
       <Footer />
