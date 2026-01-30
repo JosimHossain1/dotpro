@@ -1,7 +1,8 @@
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Narrative from "@/components/Narrative";
 import Navbar from "@/components/Navbar";
-import Pricing from "@/components/Pricing";
 
 const page = () => {
   return (
@@ -24,7 +25,7 @@ const page = () => {
             <div className="h-40 w-px bg-gradient-to-b from-transparent to-[#00CC76]"></div>
             <span className="mt-4 text-[9px] font-black text-[#00CC76] uppercase tracking-[0.6em]">Phase 01_Diagnostic</span>
           </div>
-
+          <Narrative />
         </div>
 
         {/* The Flow Journey Phase 02: Intervention */}
@@ -40,9 +41,7 @@ const page = () => {
         <div className="relative">
 
         </div>
-
-        {/* The Final Destination: Deployment */}
-        <Pricing />
+        <FinalCTA />
       </main>
 
       <Footer />

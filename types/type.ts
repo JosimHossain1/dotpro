@@ -29,3 +29,15 @@ export interface PricingPlan {
   features: string[];
   isPopular?: boolean;
 }
+
+export interface BookDetails {
+  title: string;
+  subtitle: string;
+  author: string;
+  price: number;
+  originalPrice: number;
+  pages: number;
+  chapters: number;
+  rating: number;
+  reviews: number;
+}
