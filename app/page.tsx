@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
+import TheArtifacts from "@/components/TheArtifacts";
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
 
         <ChapterPreview />
 
+        <TheArtifacts />
 
 
 
