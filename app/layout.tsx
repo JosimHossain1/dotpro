@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   authors: [{ name: "The Semantic Architect" }],
   creator: "The Semantic Architect",
   publisher: "The Semantic Architect",
-  metadataBase: new URL("https://arif-almas.com"),
+  metadataBase: new URL("https://dotpro-ebook.vercel.app/"),
   openGraph: {
     title: "The Semantic Architect – SEO & Accessibility eBook",
     description:
       "Learn how to become a perfect developer by mastering SEO, accessibility, and semantic architecture.",
-    url: "https://arif-almas.com",
+    url: "https://dotpro-ebook.vercel.app",
     siteName: "The Semantic Architect",
     images: [
       {
