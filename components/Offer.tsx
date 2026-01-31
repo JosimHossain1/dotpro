@@ -3,7 +3,7 @@ import React from 'react';
 const Offer: React.FC = () => {
   return (
     <section id="checkout" className="py-40 px-6 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-24">
           <span className="text-black/40 dark:text-white/40 font-bold text-[10px] uppercase tracking-[0.5em] mb-6 block">Final Access</span>
           <h2 className="text-5xl md:text-7xl font-bold text-black dark:text-white tracking-tighter serif italic transition-colors">Secure Your <br/><span className="text-[#00CC76]">Digital License.</span></h2>

@@ -3,7 +3,7 @@ import { PRICING } from "@/data/constants";
 const Pricing = () => {
   return (
     <section id="pricing" className="py-32 bg-[#050505]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-24">
           <h2 className="text-xs font-bold text-indigo-500 uppercase tracking-[0.5em] mb-6">Pricing</h2>
           <h3 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tighter">Invest in your <span className="text-gradient">Focus.</span></h3>

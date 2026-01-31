@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 
-const ScrollToTop: React.FC = () => {
+const ScrollToTop= () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -29,7 +29,7 @@ const ScrollToTop: React.FC = () => {
       <button
         onClick={scrollToTop}
         aria-label="Scroll to top"
-        className="w-12 h-12 bg-white/80 dark:bg-black/60 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-full flex items-center justify-center text-black dark:text-white shadow-lg hover:bg-[#00CC76] hover:text-white hover:border-[#00CC76] focus:outline-none focus:ring-2 focus:ring-[#00CC76] transition-all group"
+        className="w-12 h-12 bg-white/80 dark:bg-black/60 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-full flex items-center justify-center text-black dark:text-white shadow-lg bg-[#00CC76] hover:text-white hover:border-[#00CC76] focus:outline-none focus:ring-2 focus:ring-[#00CC76] transition-all group"
       >
         <svg 
           className="w-5 h-5 transition-transform group-hover:-translate-y-1" 

@@ -3,7 +3,7 @@ import React from 'react';
 const ChapterPreview = () => {
   return (
     <section id="preview" className="py-32 px-6 bg-white dark:bg-[#0A0A0A] overflow-hidden transition-colors duration-500">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           
           <div className="max-w-xl">

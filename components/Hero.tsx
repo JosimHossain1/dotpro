@@ -4,24 +4,24 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex flex-col justify-center px-6 overflow-hidden bg-white dark:bg-[#0A0A0A] pt-32 pb-20 lg:pt-48 transition-colors duration-500">
       {/* Background Architectural Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#00CC76]/[0.08] dark:from-[#00CC76]/[0.12] to-transparent rounded-full blur-[140px]"></div>
-        <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-slate-50/50 dark:bg-white/[0.02] rounded-full blur-[100px]"></div>
+        <div className="absolute top-0 right-0 w-200 h-200 bg-linear-to-br from-[#00CC76]/8 dark:from-[#00CC76]/12 to-transparent rounded-full blur-[140px]"></div>
+        <div className="absolute bottom-[-10%] left-[-5%] w-150 h-150 bg-slate-50/50 dark:bg-white/2 rounded-full blur-[100px]"></div>
         <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]" style={{ backgroundImage: `linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)`, backgroundSize: '60px 60px' }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
         
         {/* Left Column: Intelligence */}
         <div className="lg:col-span-7 flex flex-col items-start fade-in">
-          <div className="inline-flex items-center space-x-3 mb-8 py-2.5 px-5 bg-black/[0.03] dark:bg-white/[0.05] border border-black/[0.08] dark:border-white/[0.1] rounded-full backdrop-blur-md">
+          <div className="inline-flex items-center space-x-3 mb-8 py-2.5 px-5 bg-black/3 dark:bg-white/5 border border-black/8 dark:border-white/1 rounded-full backdrop-blur-md">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00CC76] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00CC76]"></span>
             </span>
-            <span className="text-[10px] font-black text-black/60 dark:text-white/60 uppercase tracking-[0.35em]">Technical Edition v2.2.0</span>
+            <span className="text-[10px] font-black text-black/60 dark:text-white/60 uppercase tracking-[0.35em]">Technical Edition v1.0.0</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-bold text-black dark:text-white leading-[0.95] tracking-tighter mb-8 transition-colors">
+          <h1 className="text-3xl md:text-5xl lg:text-[6rem] font-bold text-black dark:text-white leading-[0.95] tracking-tighter mb-8 transition-colors">
             Ship Inclusive <br/>
             <span className="serif italic text-[#00A35C] dark:text-[#00CC76] relative inline-block">
               High-Rank Sites.
@@ -51,15 +51,15 @@ const Hero = () => {
 
         {/* Right Column: Book Mockup */}
         <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end group">
-          <div className="relative w-full max-w-[480px] aspect-[1/1.1] perspective-[3000px]">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-gradient-to-tr from-[#00CC76]/20 dark:from-[#00CC76]/30 via-transparent to-[#00CC76]/20 blur-[130px] rounded-full pointer-events-none scale-95 group-hover:scale-110 transition-all duration-1000"></div>
+          <div className="relative w-full max-w-120 aspect-[1/1.1] perspective-[3000px]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-linear-to-tr from-[#00CC76]/20 dark:from-[#00CC76]/30 via-transparent to-[#00CC76]/20 blur-[130px] rounded-full pointer-events-none scale-95 group-hover:scale-110 transition-all duration-1000"></div>
 
-            <div className="relative w-[300px] h-[420px] sm:w-[340px] sm:h-[480px] mx-auto transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform rotate-[-6deg] group-hover:rotate-[-2deg] group-hover:scale-105 group-hover:-translate-y-2">
+            <div className="relative w-75 h-105 sm:w-85 sm:h-120 mx-auto transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform -rotate-6 group-hover:rotate-2 group-hover:scale-105 group-hover:-translate-y-2">
               
               <div className="absolute inset-0 bg-[#0F0F0F] dark:bg-[#050505] rounded-[2.5rem] shadow-[0_60px_120px_-30px_rgba(0,0,0,0.7)] group-hover:shadow-[0_80px_160px_-40px_rgba(0,204,118,0.25)] overflow-hidden border border-white/10 ring-1 ring-white/5 z-10">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-[#00CC76]/5 opacity-60"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-[#00CC76]/5 opacity-60"></div>
                 
-                <div className="absolute top-0 left-0 w-3 h-full bg-gradient-to-b from-[#00CC76] via-[#00FF95] to-[#00A35C] shadow-[15px_0_50px_rgba(0,204,118,0.4)] z-20"></div>
+                <div className="absolute top-0 left-0 w-3 h-full bg-linear-to-b from-[#00CC76] via-[#00FF95] to-[#00A35C] shadow-[15px_0_50px_rgba(0,204,118,0.4)] z-20"></div>
 
                 <div className="relative h-full p-10 sm:p-12 flex flex-col justify-between z-10 text-left">
                   <div className="flex justify-between items-start">
@@ -70,11 +70,11 @@ const Hero = () => {
                   </div>
 
                   <div className="space-y-6">
-                    <div className="h-[4px] w-16 bg-[#00CC76]/40 rounded-full mb-6"></div>
+                    <div className="h-1 w-16 bg-[#00CC76]/40 rounded-full mb-6"></div>
                     <h2 className="text-white text-4xl sm:text-5xl font-bold tracking-tighter leading-[0.85] flex flex-col gap-1">
                       <span className="text-white/30 text-2xl sm:text-3xl">THE SEMANTIC</span>
                       <span className="text-white">ARCHITECT.</span>
-                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00CC76] via-[#00FF95] to-[#00A35C]">A11Y + SEO.</span>
+                      <span className="bg-clip-text text-transparent bg-linear-to-r from-[#00CC76] via-[#00FF95] to-[#00A35C]">A11Y + SEO.</span>
                     </h2>
                   </div>
 

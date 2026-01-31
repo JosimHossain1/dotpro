@@ -24,7 +24,7 @@ const TheArtifacts: React.FC = () => {
 
   return (
     <section className="py-40 px-6 bg-slate-50 dark:bg-black/20 border-y border-black/5 dark:border-white/5 transition-colors duration-500">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-32">
           <span className="text-[#00CC76] font-bold text-[10px] uppercase tracking-[0.5em] mb-4 block">Developer Bundle</span>
           <h2 className="text-5xl md:text-7xl font-bold text-black dark:text-white tracking-tighter serif italic transition-colors">Total <span className="text-black/30 dark:text-white/30">Compliance.</span></h2>
