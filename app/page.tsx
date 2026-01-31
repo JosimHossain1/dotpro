@@ -1,8 +1,9 @@
-import FinalCTA from "@/components/FinalCTA";
+
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Narrative from "@/components/Narrative";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 
 const page = () => {
   return (
@@ -41,7 +42,7 @@ const page = () => {
         <div className="relative">
 
         </div>
-        <FinalCTA />
+        <Pricing />
       </main>
 
       <Footer />

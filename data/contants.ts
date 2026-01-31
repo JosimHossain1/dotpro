@@ -1,16 +1,20 @@
-import { BookDetails, FAQItem, Feature,  Testimonial } from "@/types/type"
+import {  FAQItem, Feature,  PricingPlan,  Testimonial } from "@/types/type"
 
-export const BOOK_INFO: BookDetails = {
-  title: "The Unseen Architecture",
-  subtitle: "Designing a Life of Radical Intent and Timeless Purpose",
-  author: "Dr. Julian Sterling",
-  price: 24.99,
-  originalPrice: 45.00,
-  pages: 342,
-  chapters: 12,
-  rating: 4.9,
-  reviews: 1284,
-};
+
+
+export const PRICING: PricingPlan[] = [
+  {
+    name: 'The Architect',
+    price: '$49',
+    description: 'The complete guide to SEO and Accessibility.',
+    features: [
+      'The Semantic Architect eBook',
+      'WCAG 2.2 Audit Checklist',
+      'Core Web Vitals Roadmap',
+      'Code Snippet Library'
+    ],
+  },
+];
 
 
 export const FEATURES: Feature[] = [

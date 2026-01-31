@@ -23,14 +23,10 @@ export interface FAQItem {
 }
 
 
-export interface BookDetails {
-  title: string;
-  subtitle: string;
-  author: string;
-  price: number;
-  originalPrice: number;
-  pages: number;
-  chapters: number;
-  rating: number;
-  reviews: number;
+export interface PricingPlan {
+  name: string;
+  price: string;
+  description: string;
+  features: string[];
+  isPopular?: boolean;
 }
