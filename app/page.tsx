@@ -2,6 +2,7 @@
 import ChapterPreview from '@/components/ChapterPreview';
 import FAQ from '@/components/FAQ';
 import Features from '@/components/Features';
+import Feedback from '@/components/Feedback';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Narrative from '@/components/Narrative';
@@ -9,7 +10,6 @@ import Navbar from '@/components/Navbar';
 import Offer from '@/components/Offer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SocialShare from '@/components/SocialShare';
-import Testimonials from '@/components/Testimonials';
 import TheArtifacts from '@/components/TheArtifacts';
 import Ticker from '@/components/Ticker';
 
@@ -32,7 +32,7 @@ const page = () => {
         <TheArtifacts />
         <Features />
         <Narrative />
-        <Testimonials />
+        <Feedback />
         <Offer />
         <FAQ />
       </main>

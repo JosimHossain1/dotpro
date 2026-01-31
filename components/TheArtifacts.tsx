@@ -1,26 +1,7 @@
-import React from 'react';
+import { assets } from '@/data/constants';
 
-const TheArtifacts: React.FC = () => {
-  const assets = [
-    {
-      title: "The Semantic Manual",
-      format: "PDF / EPUB",
-      detail: "Complete technical guide from basic landmarks to advanced ARIA-live implementations.",
-      icon: "01"
-    },
-    {
-      title: "Audit Checklist",
-      format: "EXCEL / NOTION",
-      detail: "A 120-point rigorous checklist to ensure every deployment is search and user ready.",
-      icon: "02"
-    },
-    {
-      title: "Pattern Library",
-      format: "CODE REPO",
-      detail: "Ready-to-use semantic components for React, Vue, and Vanilla JS.",
-      icon: "03"
-    }
-  ];
+const TheArtifacts= () => {
+
 
   return (
     <section className="py-40 px-6 bg-slate-50 dark:bg-black/20 border-y border-black/5 dark:border-white/5 transition-colors duration-500">
@@ -32,7 +13,7 @@ const TheArtifacts: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {assets.map((asset, i) => (
-            <div key={i} className="group relative bg-white dark:bg-white/[0.03] p-12 rounded-[3.5rem] border border-black/5 dark:border-white/10 hover:border-[#00CC76]/30 transition-all duration-700 hover:shadow-2xl hover:shadow-black/5">
+            <div key={i} className="group relative bg-white dark:bg-white/3 p-12 rounded-[3.5rem] border border-black/5 dark:border-white/10 hover:border-[#00CC76]/30 transition-all duration-700 hover:shadow-2xl hover:shadow-black/5">
               <div className="mb-10 flex justify-between items-start">
                 <div className="w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-2xl flex items-center justify-center font-black text-xs group-hover:bg-[#00CC76] dark:group-hover:bg-[#00CC76] dark:group-hover:text-white transition-colors">
                   {asset.icon}

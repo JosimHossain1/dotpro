@@ -91,3 +91,25 @@ export const PRICING: PricingPlan[] = [
     ],
   },
 ];
+
+// Assets data for TheArtifacts component
+ export const assets = [
+    {
+      title: "The Semantic Manual",
+      format: "PDF / EPUB",
+      detail: "Complete technical guide from basic landmarks to advanced ARIA-live implementations.",
+      icon: "01"
+    },
+    {
+      title: "Audit Checklist",
+      format: "EXCEL / NOTION",
+      detail: "A 120-point rigorous checklist to ensure every deployment is search and user ready.",
+      icon: "02"
+    },
+    {
+      title: "Pattern Library",
+      format: "CODE REPO",
+      detail: "Ready-to-use semantic components for React, Vue, and Vanilla JS.",
+      icon: "03"
+    }
+  ];
