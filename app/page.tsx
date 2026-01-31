@@ -1,12 +1,12 @@
 
 import ChapterPreview from "@/components/ChapterPreview";
-import DailyProtocol from "@/components/DailyProtocol";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Narrative from "@/components/Narrative";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
+import ScrollToTop from "@/components/ScrollToTop";
 import TheArtifacts from "@/components/TheArtifacts";
 
 const page = () => {
@@ -47,6 +47,7 @@ const page = () => {
       </main>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
