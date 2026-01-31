@@ -1,4 +1,4 @@
-import { PRICING } from '@/data/contants';
+import { PRICING } from "@/data/constants";
 
 const Pricing = () => {
   return (
