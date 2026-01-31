@@ -1,9 +1,6 @@
-
 import { PRICING } from '@/data/contants';
-import React from 'react';
 
-
-const Pricing: React.FC = () => {
+const Pricing = () => {
   return (
     <section id="pricing" className="py-32 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-6">

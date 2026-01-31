@@ -1,58 +1,48 @@
-
 import React from 'react';
 
-const Footer= () => {
+const Footer = () => {
   return (
-    <footer className="bg-[#050605] pt-40 pb-20 border-t border-white/5 relative z-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mb-32">
-          <div className="md:col-span-5">
-            <div className="flex items-center space-x-4 mb-10">
-              <div className="relative w-10 h-10">
-                <div className="absolute inset-0 bg-[#00CC76] rotate-45"></div>
-                <div className="absolute inset-0 flex items-center justify-center text-black font-black text-sm z-10">B</div>
-              </div>
-              <span className="font-black text-2xl tracking-tighter text-white uppercase italic">Blueprint<span className="text-[#00CC76]">.</span></span>
+    <footer className="bg-white dark:bg-[#0A0A0A] pt-40 pb-20 border-t border-black/5 dark:border-white/5 relative z-10 transition-colors duration-500" aria-label="Global Footer">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32">
+          <div>
+            <div className="flex items-center space-x-3 mb-10">
+              <div className="w-5 h-5 bg-black dark:bg-white rounded-sm rotate-45" aria-hidden="true"></div>
+              <span className="font-bold text-xl tracking-tight text-black dark:text-white uppercase transition-colors">DotPro<span className="text-[#00CC76]">.</span></span>
             </div>
-            <p className="text-slate-500 max-w-sm text-sm font-bold leading-relaxed uppercase tracking-wider">
-              Engineering the capacity for deep thought in a shallow world.
+            <p className="text-black/40 dark:text-white/40 max-w-sm text-[10px] font-bold leading-relaxed uppercase tracking-[0.3em]">
+              Engineering the capacity for deep inclusion in a digital world.
             </p>
           </div>
-          
-          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-12">
-            <div>
-              <h4 className="font-black text-[#00CC76] mb-8 uppercase text-[10px] tracking-[0.4em]">Protocol</h4>
-              <ul className="space-y-5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
-                <li><a href="#narrative" className="hover:text-white transition-colors">Architecture</a></li>
-                <li><a href="#preview" className="hover:text-white transition-colors">Interface</a></li>
-                <li><a href="#pricing" className="hover:text-white transition-colors">Licensing</a></li>
+
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-12">
+            <nav aria-label="Product Links">
+              <h4 className="font-bold text-black/20 dark:text-white/20 mb-8 uppercase text-[10px] tracking-[0.3em]">Protocol</h4>
+              <ul className="space-y-4 text-[10px] font-bold uppercase tracking-[0.1em] text-black/50 dark:text-white/50">
+                <li><a href="#preview" className="hover:text-black dark:hover:text-white transition-colors">Vault</a></li>
+                <li><a href="#checkout" className="hover:text-black dark:hover:text-white transition-colors">Purchase</a></li>
+                <li><a href="#" className="hover:text-black dark:hover:text-white transition-colors">Repo</a></li>
               </ul>
-            </div>
-            <div>
-              <h4 className="font-black text-[#00CC76] mb-8 uppercase text-[10px] tracking-[0.4em]">Resources</h4>
-              <ul className="space-y-5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
-                <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Log_Updates</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
+            </nav>
+            <nav aria-label="Support Links">
+              <h4 className="font-bold text-black/20 dark:text-white/20 mb-8 uppercase text-[10px] tracking-[0.3em]">Resources</h4>
+              <ul className="space-y-4 text-[10px] font-bold uppercase tracking-[0.1em] text-black/50 dark:text-white/50">
+                <li><a href="#" className="hover:text-black dark:hover:text-white transition-colors">Privacy</a></li>
+                <li><a href="#" className="hover:text-black dark:hover:text-white transition-colors">Terms</a></li>
+                <li><a href="#" className="hover:text-black dark:hover:text-white transition-colors">WCAG 2.2</a></li>
               </ul>
-            </div>
-            <div className="col-span-2 md:col-span-1">
-              <h4 className="font-black text-[#00CC76] mb-8 uppercase text-[10px] tracking-[0.4em]">Security</h4>
-              <ul className="space-y-5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
-                <li><a href="#" className="hover:text-white transition-colors">Privacy_Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms_Service</a></li>
-              </ul>
-            </div>
+            </nav>
           </div>
         </div>
-        
-        <div className="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          <div className="flex items-center space-x-6">
-             <div className="w-2 h-2 bg-[#00CC76] rounded-full pulse-emerald"></div>
-             <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">© 2025 Deep Blueprint Media / System Active</p>
-          </div>
-          <div className="flex space-x-10">
-            <a href="#" className="text-slate-600 hover:text-[#00CC76] transition-colors"><span className="sr-only">X</span><svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+
+        <div className="pt-16 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <p className="text-[10px] font-bold text-black/20 dark:text-white/20 uppercase tracking-[0.2em]">© 2025 DotPro</p>
+          <div className="flex space-x-8 opacity-40 hover:opacity-100 transition-opacity">
+            <a href="#" className="text-black dark:text-white hover:text-[#00CC76] p-2" aria-label="Follow us on X">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

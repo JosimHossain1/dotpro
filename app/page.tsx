@@ -1,7 +1,7 @@
 
+import ChapterPreview from "@/components/ChapterPreview";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import Narrative from "@/components/Narrative";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 
@@ -19,15 +19,10 @@ const page = () => {
       <main id="main-content" className="relative z-10">
         <Hero />
 
+        <ChapterPreview />
 
 
-        <div className="relative">
-          <div className="absolute left-1/2 -top-20 -translate-x-1/2 flex flex-col items-center">
-            <div className="h-40 w-px bg-gradient-to-b from-transparent to-[#00CC76]"></div>
-            <span className="mt-4 text-[9px] font-black text-[#00CC76] uppercase tracking-[0.6em]">Phase 01_Diagnostic</span>
-          </div>
-          <Narrative />
-        </div>
+
 
         {/* The Flow Journey Phase 02: Intervention */}
         <div className="relative mt-40">
@@ -46,14 +41,6 @@ const page = () => {
       </main>
 
       <Footer />
-      {/* Persistent Flow Labels */}
-      <div className="hidden xl:flex fixed right-10 top-1/2 -translate-y-1/2 phase-label items-center space-y-10 py-10 z-50">
-        <span className="text-[8px] font-black text-white/10 uppercase tracking-[1em]">Diagnose</span>
-        <div className="h-10 w-px bg-white/10"></div>
-        <span className="text-[8px] font-black text-[#00CC76] uppercase tracking-[1em]">Optimize</span>
-        <div className="h-10 w-px bg-white/10"></div>
-        <span className="text-[8px] font-black text-white/10 uppercase tracking-[1em]">Deploy</span>
-      </div>
     </div>
   );
 };
