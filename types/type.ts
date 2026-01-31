@@ -22,13 +22,6 @@ export interface FAQItem {
   answer: string;
 }
 
-export interface PricingPlan {
-  name: string;
-  price: string;
-  description: string;
-  features: string[];
-  isPopular?: boolean;
-}
 
 export interface BookDetails {
   title: string;
