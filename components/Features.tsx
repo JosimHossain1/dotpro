@@ -4,7 +4,7 @@ import React from 'react';
 const Features: React.FC = () => {
   return (
     <section id="features" className="py-15 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 mb-10">
           {FEATURES.map((feature) => (
             <div key={feature.id} className="group flex flex-col items-start">

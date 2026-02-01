@@ -4,7 +4,7 @@ import BlinkDot from "./helpers/BlinkDot";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center px-6 overflow-hidden bg-white dark:bg-[#0A0A0A] pt-32 pb-20 lg:pt-30 transition-colors duration-500">
+    <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden bg-white dark:bg-[#0A0A0A] pt-32 pb-20 lg:pt-30 transition-colors duration-500">
       {/* Background Architectural Elements */}
       <Background />
 

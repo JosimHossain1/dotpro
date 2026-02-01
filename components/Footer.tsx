@@ -8,7 +8,7 @@ const Footer = () => {
       aria-label="Global Footer"
       className="relative z-10 bg-white dark:bg-[#222222] transition-colors duration-500"
     >
-      <div className="max-w-6xl mx-auto px-6 pt-15 ">
+      <div className="max-w-6xl mx-auto pt-15 ">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-10">
           {/* Brand */}

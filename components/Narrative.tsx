@@ -2,7 +2,7 @@ import { FEATURES } from '@/data/constants';
 
 const Narrative= () => {
   return (
-    <div id="narrative" className="max-w-6xl mx-auto px-6 py-40 bg-white dark:bg-[#0A0A0A] transition-colors duration-500">
+    <div id="narrative" className="max-w-6xl mx-auto py-40 bg-white dark:bg-[#0A0A0A] transition-colors duration-500">
       
       {/* Introduction to Method */}
       <div className="mb-40 text-center">

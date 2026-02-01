@@ -2,7 +2,7 @@ import React from 'react';
 
 const Offer= () => {
   return (
-    <section id="checkout" className="py-15 px-6 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
+    <section id="checkout" className="py-15 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-24">
           <span className="text-black/40 dark:text-white/40 font-bold text-[10px] uppercase tracking-[0.5em] mb-6 block">Final Access</span>
