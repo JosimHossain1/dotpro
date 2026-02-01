@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import { Button } from './ui/button';
 
 const ScrollToTop= () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,11 +26,11 @@ const ScrollToTop= () => {
   }, []);
 
   return (
-    <div className={`fixed bottom-8 right-8 z-[150] transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'}`}>
-      <button
+    <div className={`fixed bottom-8 right-8 z-150 transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'}`}>
+      <Button
         onClick={scrollToTop}
         aria-label="Scroll to top"
-        className="w-12 h-12 bg-white/80 dark:bg-black/60 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-full flex items-center justify-center text-black dark:text-white shadow-lg bg-[#00CC76] hover:text-white hover:border-[#00CC76] focus:outline-none focus:ring-2 focus:ring-[#00CC76] transition-all group"
+        className="bg-[#00CC76]"
       >
         <svg 
           className="w-5 h-5 transition-transform group-hover:-translate-y-1" 
@@ -39,7 +40,7 @@ const ScrollToTop= () => {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 15l7-7 7 7" />
         </svg>
-      </button>
+      </Button>
     </div>
   );
 };
