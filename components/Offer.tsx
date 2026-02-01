@@ -2,7 +2,7 @@ import React from 'react';
 
 const Offer= () => {
   return (
-    <section id="checkout" className="py-40 px-6 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
+    <section id="checkout" className="py-15 px-6 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-24">
           <span className="text-black/40 dark:text-white/40 font-bold text-[10px] uppercase tracking-[0.5em] mb-6 block">Final Access</span>
@@ -46,8 +46,8 @@ const Offer= () => {
         </div>
 
         <div className="mt-10 text-center">
-           <p className="text-[10px] text-white dark:text-white/30 font-black uppercase tracking-[0.4em] mb-4">30-Day Technical Guarantee</p>
-           <p className="text-[12px] text-white dark:text-white/20 font-medium max-w-lg mx-auto leading-relaxed">
+           <p className="text-[10px] text-black/70 dark:text-white/70 font-black uppercase tracking-[0.4em] mb-4">30-Day Technical Guarantee</p>
+           <p className="text-[12px] text-black/50 dark:text-white/60 font-medium max-w-lg mx-auto leading-relaxed">
               If the protocol doesn't fundamentally improve your Lighthouse scores and search visibility, contact us for a full refund. No questions asked.
            </p>
         </div>

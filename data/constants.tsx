@@ -1,5 +1,5 @@
 import { FAQItem, Feature, PricingPlan, Testimonial } from '@/types/type';
-import React from 'react';
+import { Code, Eye } from 'lucide-react';
 
 
 export const FEATURES: Feature[] = [
@@ -7,22 +7,13 @@ export const FEATURES: Feature[] = [
     id: '1',
     title: 'Semantic Architecture',
     description: 'Master the hierarchy of HTML5 to ensure search engines and screen readers parse your intent with 100% accuracy.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-      </svg>
-    ),
+    icon: <Code className="w-6 h-6" />,
   },
   {
     id: '2',
     title: 'WCAG 2.2 Implementation',
     description: 'Beyond alt text. Learn a precise protocol for focus management, keyboard traps, and complex ARIA patterns.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-      </svg>
-    ),
+    icon: <Eye className="w-6 h-6" />,
   },
   {
     id: '3',

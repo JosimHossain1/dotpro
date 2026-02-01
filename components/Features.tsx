@@ -3,15 +3,15 @@ import React from 'react';
 
 const Features: React.FC = () => {
   return (
-    <section id="features" className="py-40 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
+    <section id="features" className="py-15 bg-white dark:bg-[#0A0A0A] border-t border-black/5 dark:border-white/5 transition-colors duration-500">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 mb-40">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 mb-10">
           {FEATURES.map((feature) => (
             <div key={feature.id} className="group flex flex-col items-start">
-              <div className="w-12 h-12 bg-black/[0.02] dark:bg-white/[0.05] border border-black/5 dark:border-white/10 rounded-xl flex items-center justify-center text-black dark:text-white mb-8 group-hover:bg-[#00CC76] group-hover:text-white group-hover:border-[#00CC76] transition-all duration-500 shadow-sm">
+              <div className="w-12 h-12 bg-black/2 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-xl flex items-center justify-center text-black dark:text-white mb-8 group-hover:bg-[#00CC76] group-hover:text-white group-hover:border-[#00CC76] transition-all duration-500 shadow-sm">
                 {feature.icon}
               </div>
-              <h4 className="text-xl font-bold text-black dark:text-white mb-4 tracking-tight uppercase tracking-[0.05em]">{feature.title}</h4>
+              <h4 className="text-xl font-bold text-black dark:text-white mb-4 tracking-tight uppercase tracking-light">{feature.title}</h4>
               <p className="text-black/50 dark:text-white/40 leading-relaxed text-sm font-medium">
                 {feature.description}
               </p>
@@ -50,7 +50,7 @@ const Features: React.FC = () => {
               { label: 'Technical Readers', value: '12,400+', color: 'text-black dark:text-white' },
               { label: 'Global Satisfaction', value: '4.9/5', color: 'text-[#00A35C] dark:text-[#00CC76]' }
             ].map((stat, i) => (
-              <div key={i} className={`p-10 rounded-[2.5rem] border border-black/5 dark:border-white/10 flex flex-col items-center justify-center text-center transition-all bg-white dark:bg-white/[0.02] hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-[#00CC76]/5 group`}>
+              <div key={i} className={`p-10 rounded-[2.5rem] border border-black/5 dark:border-white/10 flex flex-col items-center justify-center text-center transition-all bg-white dark:bg-white/2 hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-[#00CC76]/5 group`}>
                 <span className={`text-4xl font-bold tracking-tighter mb-2 ${stat.color}`}>{stat.value}</span>
                 <span className="text-[10px] font-black text-black/30 dark:text-white/30 uppercase tracking-[0.3em]">{stat.label}</span>
               </div>

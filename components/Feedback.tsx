@@ -62,7 +62,7 @@ const Feedback = () => {
                 bg-transparent
                 border border-black/10 dark:border-white/10
                 rounded-2xl
-                h-[250px]
+                h-62.5
               "
               style={{
                 marginRight: 'var(--item-gap)',

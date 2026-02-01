@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChapterPreview = () => {
   return (
-    <section id="preview" className="py-32 px-10 bg-white dark:bg-[#0A0A0A] overflow-hidden transition-colors duration-500">
+    <section id="preview" className="py-15 px-10 bg-white dark:bg-[#0A0A0A] overflow-hidden transition-colors duration-500">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           
@@ -28,7 +28,7 @@ const ChapterPreview = () => {
           </div>
 
           <div className="relative group perspective-[2000px]">
-            <div className="relative aspect-[3/4] max-w-[450px] mx-auto bg-slate-50 dark:bg-white/[0.02] border border-black/5 dark:border-white/10 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col shadow-black/5 transition-transform duration-700 group-hover:rotate-y-[-5deg]">
+            <div className="relative aspect-3/4 max-w-112.5 mx-auto bg-slate-50 dark:bg-white/2 border border-black/5 dark:border-white/10 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col shadow-black/5 transition-transform duration-700 group-hover:rotate-y-[-5deg]">
               
               <div className="px-8 py-6 bg-white dark:bg-black/40 border-b border-black/5 dark:border-white/10 flex justify-between items-center z-20">
                 <div className="flex items-center space-x-2">
@@ -45,9 +45,9 @@ const ChapterPreview = () => {
                   <h4 className="text-3xl font-bold text-black dark:text-white tracking-tight serif italic leading-tight transition-colors">The Skip-Link <br/> Architecture.</h4>
                 </div>
 
-                <div className="h-[2px] w-16 bg-[#00CC76]/30"></div>
+                <div className="h-0.5 w-16 bg-[#00CC76]/30"></div>
 
-                <p className="text-black/70 dark:text-white/70 leading-[1.8] font-medium text-sm font-mono bg-black/[0.02] dark:bg-white/[0.05] p-5 rounded-2xl border border-black/[0.05] dark:border-white/10 transition-colors">
+                <p className="text-black/70 dark:text-white/70 leading-[1.8] font-medium text-sm font-mono bg-black/2 dark:bg-white/5 p-5 rounded-2xl border border-black/5 dark:border-white/10 transition-colors">
                   &lt;a href="#main" <br/>
                   &nbsp;&nbsp;className="sr-only <br/>
                   &nbsp;&nbsp;focus:not-sr-only"&gt;<br/>
@@ -67,18 +67,18 @@ const ChapterPreview = () => {
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 pb-20">
-                  <div className="h-24 bg-slate-100 dark:bg-white/[0.03] rounded-xl flex flex-col items-center justify-center border border-black/[0.03] dark:border-white/10">
+                  <div className="h-24 bg-slate-100 dark:bg-white/3 rounded-xl flex flex-col items-center justify-center border border-black/3 dark:border-white/10">
                     <span className="text-[10px] font-bold text-black/20 dark:text-white/20 uppercase tracking-widest">A11Y</span>
                     <div className="w-8 h-1 bg-[#00CC76] rounded-full mt-2"></div>
                   </div>
-                  <div className="h-24 bg-slate-100 dark:bg-white/[0.03] rounded-xl flex flex-col items-center justify-center border border-black/[0.03] dark:border-white/10">
+                  <div className="h-24 bg-slate-100 dark:bg-white/3rounded-xl flex flex-col items-center justify-center border border-black/3 dark:border-white/10">
                     <span className="text-[10px] font-bold text-black/20 dark:text-white/20 uppercase tracking-widest">SEO</span>
                     <div className="w-8 h-1 bg-black/40 dark:bg-white/40 rounded-full mt-2"></div>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-white dark:from-[#0A0A0A] via-white/90 dark:via-[#0A0A0A]/90 to-transparent z-20 transition-colors duration-500">
+              <div className="absolute bottom-0 left-0 right-0 p-8 bg-linear-to-t from-white dark:from-[#0A0A0A] via-white/90 dark:via-[#0A0A0A]/90 to-transparent z-20 transition-colors duration-500">
                 <button className="w-full bg-black dark:bg-white text-white dark:text-black py-4 rounded-full font-bold text-[10px] uppercase tracking-[0.3em] shadow-xl hover:bg-[#00CC76] dark:hover:bg-[#00CC76] dark:hover:text-white transition-all">
                   Read Accessibility Protocol
                 </button>

@@ -10,8 +10,8 @@ import Navbar from '@/components/Navbar';
 import Offer from '@/components/Offer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SocialShare from '@/components/SocialShare';
-import TheArtifacts from '@/components/TheArtifacts';
 import Ticker from '@/components/Ticker';
+import Compliance from '@/components/Compliance';
 
 
 const page = () => {
@@ -28,7 +28,7 @@ const page = () => {
         <Hero />
         <Ticker />
         <ChapterPreview />
-        <TheArtifacts />
+        <Compliance />
         <Features />
         <Narrative />
         <Feedback />
