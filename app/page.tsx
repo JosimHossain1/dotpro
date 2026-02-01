@@ -23,7 +23,6 @@ const page = () => {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-250h-150 bg-[#00CC76]/3 dark:bg-[#00CC76]/5 blur-[150px]" />
         <div className="absolute bottom-0 left-0 w-100 h-100 bg-slate-100 dark:bg-slate-900/20 blur-[100px]" />
       </div>
-
       <Navbar />
       <main id="main-content" className="relative z-10" role="main">
         <Hero />

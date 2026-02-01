@@ -1,54 +1,47 @@
 export const feedbackData = [
   {
     id: 1,
-    name: 'Arif Hasan',
-    role: '— Founder, MEST School',
-    profile: '/client/arif.jpg',
+    name: 'Frontend Developer',
+    role: '— React & Next.js Reader',
     feddback:
-      "Josim is one of the most reliable developers I've worked with. He understands the vision quickly and translates it into beautiful, functional web interfaces. His communication and problem-solving skills are top-notch. Highly recommended for any front-end project.",
+      'This book explains modern frontend concepts in a very practical way. The sections on layout structure, accessibility, and performance optimization are especially useful. Every topic is easy to follow, even for developers who want to build production-ready interfaces.',
   },
   {
     id: 2,
-    name: 'Nusrat Jahan',
-    role: '— Project Manager, PixelHive Agency',
-    profile: '/client/nusrat.webp',
+    name: 'UI Engineer',
+    role: '— SaaS Product Team',
     feddback:
-      "Josim did an outstanding job on our client's landing page project. He's efficient, detail-oriented, and always open to feedback. His implementation of animations and responsiveness was on point. I'd definitely collaborate with him again on future projects.",
+      'What I liked most about this book is the balance between design and engineering. It covers real-world problems like responsive layouts, dark mode, and clean component structure without unnecessary theory. The examples feel relevant to modern web projects.',
   },
   {
     id: 3,
-    name: 'Rizyo',
-    role: '— Content Creator',
-    profile: '/client/rizyo.jpeg',
+    name: 'Web Developer',
+    role: '— Freelance & Client Projects',
     feddback:
-      'Josim delivered outstanding work on portfolio. His ability to blend design and functionality is impressive. What stood out most was his professionalism — always on time, always responsive, and always delivering beyond expectations.',
+      'The book focuses on writing clean, maintainable code. Concepts like reusable components, accessibility-first thinking, and performance awareness are explained clearly. I was able to apply several ideas directly to my client projects.',
   },
 ];
 
-
 export const feedbackData2 = [
   {
-    id: 1,
-    name: 'Yasir Arafat Turzo',
-    role: '— DevOps Engineer',
-    profile: '/client/turzo.webp',
+    id: 4,
+    name: 'Software Engineer',
+    role: '— Full Stack Developer',
     feddback:
-      'I hired Josim to build my personal portfolio site. He listened carefully to my ideas and turned them into something even better than I imagined. The website looks modern, loads fast, and works perfectly on all devices.',
+      'This book stands out because it treats accessibility and SEO as core requirements, not optional extras. The guidance on semantic structure and UI consistency helped improve the overall quality of my applications.',
   },
   {
-    id: 1,
-    name: 'Sarah Bennett',
-    role: '— Product Manager, Jixo Digital',
-    profile: '/client/sarah.jpg',
+    id: 5,
+    name: 'Product Designer',
+    role: '— Design Systems Enthusiast',
     feddback:
-      'Josim delivered outstanding work on our company landing page. His ability to blend design and functionality is impressive. What stood out most was his professionalism — always on time, always responsive, and always delivering beyond expectations.',
+      'I appreciated how the book bridges the gap between design and development. Topics like spacing, typography, dark mode contrast, and component hierarchy are explained in a way that makes collaboration between designers and developers easier.',
   },
   {
-    id: 1,
-    name: 'Hazi Shafiqul Islam Salim',
-    role: '-Chairman, Easten Cable Ind.Ltd',
-    profile: '/client/safiq.png',
+    id: 6,
+    name: 'Technical Learner',
+    role: '— Self-Taught Developer',
     feddback:
-      'Josim is reliable, talented, and very easy to work with. He handled all our requests with professionalism and implemented every feature with great precision. Communication was smooth throughout the project, and he even provided a clear guideline video to help us understand how to operate the website. — highly recommended!',
+      'The writing style is clear and structured. Each chapter builds logically on the previous one, which makes it easy to follow. The focus on real-world examples and best practices makes this book a valuable long-term reference.',
   },
 ];

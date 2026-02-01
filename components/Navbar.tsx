@@ -3,89 +3,85 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Logo from './helpers/Logo';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { Sun, Moon } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  const isDark = theme === 'dark';
+  const { setTheme } = useTheme();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-300 transition-all duration-500 ease-in-out ${
-        isScrolled ? 'py-4' : 'py-8'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? 'py-3' : 'py-6'
       }`}
       aria-label="Main Navigation"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div
-          className={`flex justify-between items-center transition-all duration-500 ${
+          className={`flex items-center justify-between transition-all duration-500 ${
             isScrolled
-              ? 'bg-white/80 dark:bg-black/60 backdrop-blur-xl border border-black/5 dark:border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] rounded-full px-8 py-3'
-              : 'px-0'
+              ? 'bg-white/80 dark:bg-black/60 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-full px-6 py-3 shadow-lg'
+              : ''
           }`}
         >
-          {/* Logo */}
-         <Logo />
+          <Logo />
 
           {/* Desktop */}
-          <div className="hidden md:flex items-center space-x-10">
-            <nav className="flex items-center space-x-8 text-[10px] font-bold uppercase tracking-[0.25em] text-black/40 dark:text-white/40">
-              <a href="#preview" className="hover:text-black dark:hover:text-white">
-                Preview
-              </a>
-              <a href="#features" className="hover:text-black dark:hover:text-white">
-                Features
-              </a>
-              <a href="#checkout" className="hover:text-black dark:hover:text-white">
-                Purchase
-              </a>
+          <div className="hidden md:flex items-center gap-10">
+            <nav className="flex gap-8 text-[10px] font-bold uppercase tracking-[0.25em] text-black/40 dark:text-white/40">
+              <a href="#preview" className="hover:text-black dark:hover:text-white">Preview</a>
+              <a href="#features" className="hover:text-black dark:hover:text-white">Features</a>
+              <a href="#checkout" className="hover:text-black dark:hover:text-white">Purchase</a>
             </nav>
 
-            <div className="flex items-center space-x-6 pl-6 border-l border-black/5 dark:border-white/10">
+            <div className="flex items-center gap-4 pl-6 border-l border-black/5 dark:border-white/10">
               {/* Theme toggle */}
-              <button
-                onClick={() => setTheme(isDark ? 'light' : 'dark')}
-                className="p-2 text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-[#00CC76] rounded-lg"
-                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-              >
-                {isDark ? (
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
-                  </svg>
-                ) : (
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                  </svg>
-                )}
-              </button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                    <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                    <span className="sr-only">Toggle theme</span>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem onClick={() => setTheme('light')}>Light</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setTheme('dark')}>Dark</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
 
               <a
                 href="#checkout"
-                className="bg-black dark:bg-white text-white dark:text-black px-7 py-3 rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-[#00CC76] dark:hover:bg-[#00CC76] dark:hover:text-white transition-all shadow-lg shadow-black/5"
+                className="bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-[#00CC76] dark:hover:bg-[#00CC76] dark:hover:text-white transition"
               >
                 Secure your copy
               </a>
             </div>
           </div>
 
-          {/* Mobile */}
+          {/* Mobile button */}
           <button
-            className="md:hidden text-black dark:text-white p-2 focus-visible:ring-2 focus-visible:ring-[#00CC76] rounded-lg"
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={isMenuOpen}
+            className="md:hidden p-2 rounded-lg focus-visible:ring-2 focus-visible:ring-[#00CC76]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-black dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -98,6 +94,44 @@ const Navbar = () => {
               />
             </svg>
           </button>
+        </div>
+
+        {/* Mobile menu */}
+        <div
+          className={`md:hidden mt-4 overflow-hidden transition-all duration-500 ${
+            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="rounded-2xl bg-white/90 dark:bg-black/80 backdrop-blur-xl border border-black/5 dark:border-white/10 p-6 space-y-6">
+            <nav className="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-black/60 dark:text-white/60">
+              <a href="#preview" onClick={() => setIsMenuOpen(false)}>Preview</a>
+              <a href="#features" onClick={() => setIsMenuOpen(false)}>Features</a>
+              <a href="#checkout" onClick={() => setIsMenuOpen(false)}>Purchase</a>
+            </nav>
+
+            <div className="flex items-center justify-between pt-4 border-t border-black/5 dark:border-white/10">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Sun className="h-4 w-4 dark:hidden" />
+                    <Moon className="h-4 w-4 hidden dark:block" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem onClick={() => setTheme('light')}>Light</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setTheme('dark')}>Dark</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <a
+                href="#checkout"
+                className="bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest"
+              >
+                Secure copy
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
