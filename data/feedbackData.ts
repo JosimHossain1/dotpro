@@ -20,9 +20,6 @@ export const feedbackData = [
     feddback:
       'The book focuses on writing clean, maintainable code. Concepts like reusable components, accessibility-first thinking, and performance awareness are explained clearly. I was able to apply several ideas directly to my client projects.',
   },
-];
-
-export const feedbackData2 = [
   {
     id: 4,
     name: 'Software Engineer',

@@ -1,17 +1,18 @@
 'use client';
-import ChapterPreview from '@/components/ChapterPreview';
 import FAQ from '@/components/FAQ';
-import Features from '@/components/Features';
 import Feedback from '@/components/Feedback';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
-import Narrative from '@/components/Narrative';
 import Navbar from '@/components/Navbar';
 import Offer from '@/components/Offer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SocialShare from '@/components/SocialShare';
 import Ticker from '@/components/Ticker';
-import Compliance from '@/components/Compliance';
+import Preview from '@/components/Preview';
+import WhatLearn from '@/components/WhatLearn';
+import AboutBook from '@/components/AboutBook';
+import Author from '@/components/Author';
+import BoldText from '@/components/BoldText';
 
 
 const page = () => {
@@ -27,11 +28,12 @@ const page = () => {
       <main id="main-content" className="relative z-10" role="main">
         <Hero />
         <Ticker />
-        <ChapterPreview />
-        <Compliance />
-        <Features />
-        <Narrative />
+        <Preview />
+        <WhatLearn />
         <Feedback />
+        <AboutBook />
+        <Author />
+        <BoldText />
         <Offer />
         <FAQ />
       </main>

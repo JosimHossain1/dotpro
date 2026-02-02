@@ -13,7 +13,7 @@ const FAQ = () => {
       className="py-10 bg-white dark:bg-[#0A0A0A] transition-colors duration-500"
       aria-labelledby="faq-heading"
     >
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-24">
           <span className="text-black/30 dark:text-white/70 font-bold text-[10px] uppercase tracking-[0.5em] mb-4 block">
@@ -32,7 +32,7 @@ const FAQ = () => {
           type="single"
           collapsible
           defaultValue="item-0"
-          className="space-y-6"
+          className="space-y-4"
         >
           {FAQS.map((faq, idx) => (
             <AccordionItem
